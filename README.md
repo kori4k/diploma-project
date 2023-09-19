@@ -9,6 +9,7 @@
 data.py - содержит словари с данными
 configuration.py - пути и запросы API
 main_test.py - набор запросов для проверки
+Screenshot autotest launching.jpg - скриншот запуска теста
 
 *Приятного тестирования и да прибудет с вами сила!*
 
