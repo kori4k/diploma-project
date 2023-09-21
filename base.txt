@@ -3,11 +3,11 @@ INNER JOIN "Orders" ON "Orders"."courierId"="Couriers"."id"
 WHERE "Orders"."inDelivery" = true
 GROUP BY "Couriers"."login";
 
-SELECT "Orders"."inDelivery", finished, cancelled,
+SELECT "Orders"."track",
 CASE
 WHEN "Orders"."inDelivery" = true THEN 1
 WHEN "Orders"."finished" = true THEN 2
 WHEN "Orders"."cancelled" = true THEN (-1)
            ELSE 0
-       END
+       END AS status
 FROM "Orders";
